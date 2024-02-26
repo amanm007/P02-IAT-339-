@@ -70,17 +70,19 @@ body {
   border-top-color: black;
 }
 
-h2 {
-  margin-top: 6rem;
-  font-size: 48px;
-  color: #283618;
+h1 {
+    font-size:72px;
 }
 
-h3 {
-  
-  
+h2 {
+  margin-top: 2rem;
+  font-size: 28px;
+}
+
+h3 {  
   margin-top: 1rem;
-  font-size: 32px;
+  font-size: 24px;
+  color: #283618;
 }
 
 h4 {
@@ -91,9 +93,16 @@ h4 {
 
 p {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 20px;
   color: #283618;
+  max-width:80ch;
+}
 
+li, ul {
+  margin-top: 0;
+  font-size: 20px;
+  color: #283618;
+  max-width:80ch;
 }
 
 nav a:hover, nav a:focus {
@@ -237,7 +246,7 @@ code {
   margin: 10px;
 }
 #typography h1 span{
-  font-size: 16px;
+  font-size: 32px;
   font-weight: lighter;
 }
 #typography h2 span{
