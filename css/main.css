@@ -18,13 +18,13 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: black; 
-  color: white;
+  background-color: bisque; 
+  color: #283618;
   
 }
 
 .header {
-  background-color: black;
+  background-color:bisque;
   padding: 1rem 0;
   text-align: center;
 }
@@ -34,14 +34,14 @@ body {
   flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
 }
 .navbar a {
-  color: white;
+  color: #283618 ;
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #FCCEA7;
+  color: #7bb186;
 }
 
 .main-banner {
@@ -73,7 +73,7 @@ body {
 h2 {
   margin-top: 6rem;
   font-size: 48px;
-  color: #fb5f2a;
+  color: #283618;
 }
 
 h3 {
@@ -92,7 +92,7 @@ h4 {
 p {
   margin-top: 0;
   font-size: 24px;
-  color: #FCCEA7;
+  color: #283618;
 
 }
 
@@ -115,7 +115,7 @@ code {
 /* Services Section Styling */
 .services-title {
   text-align: center;
-  color: #FB5F2A;
+  color: #283618;
 }
 
 .services-container {
@@ -207,7 +207,7 @@ code {
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #fb5f2a;
+  background-color: #283618;
 }
 #personal-training {
   margin-top: 2rem;
@@ -262,13 +262,13 @@ code {
   https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/
   */
   .button-nav:hover, .button-nav:focus {
-    background-color:#fb5f2a;
+    background-color:#283618;
   }
   
   .InputLabel:hover, .InputLabel:focus{
   
 
-    border-color: #fb5f2a;
+    border-color: #283618;
     
     }
     .button-enquiry, .button-clear {
@@ -281,13 +281,13 @@ code {
     }
     
     .button-enquiry:hover, .button-clear:hover {
-      background-color: #fb5f2a; /* Change background to orange on hover */
+      background-color: #283618; /* Change background to orange on hover */
       color: black; 
     }
    
   
   .button-enquiry:hover {
-      background-color: #e04e22; /* Darker shade for hover state */
+      background-color:  #7bb186; /* Darker shade for hover state */
   }
   .product-summary {
     display: flex;
@@ -299,7 +299,7 @@ code {
 
 .product-item {
   display: flex;
-  background-color: #e04e22;
+  background-color:  #7bb186;
   border-radius: 4px;
   width: 100%; /* Make the product item take full width of the container */
   overflow: hidden;
@@ -370,7 +370,7 @@ code {
     }
     
     .input-text:hover, .input-text:focus {
-      border-color: #fb5f2a; /* Change border to orange on hover/focus */
+      border-color:  #7bb186; /* Change border to orange on hover/focus */
     }
 /*
 
