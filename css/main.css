@@ -14,34 +14,46 @@ https://www.youtube.com/watch?v=wRNinF7YQqQ
 
 
 */
+
+html {
+  font-family: "SomeType", "Roboto", sans-serif;
+  font-size: 62.5%; /* 62.5% makes it easier to write rem pixel size (1.8rem = 18px) */
+  color: #283618; /* dark green */
+  background-color:#FFF8E1;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+/*  font-family: 'Poppins', sans-serif;*/
   margin: 0;
   padding: 0;
+/*
   background-color: black; 
   color: white;
+*/
+  font-size: 1.6rem;
   
 }
 
 .header {
-  background-color: black;
+  background-color: bisque; /* bisque */
   padding: 1rem 0;
   text-align: center;
 }
+
 .navbar {
   display: flex;
   justify-content: center; /* Center the links */
   flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
 }
 .navbar a {
-  color: white;
+  color: #283618;
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
 }
 
 .navbar a:hover {
-  color: #FCCEA7;
+	color: #FFF8E1;;
 }
 
 .main-banner {
@@ -73,7 +85,6 @@ body {
 h2 {
   margin-top: 6rem;
   font-size: 48px;
-  color: #fb5f2a;
 }
 
 h3 {
@@ -92,7 +103,6 @@ h4 {
 p {
   margin-top: 0;
   font-size: 24px;
-  color: #FCCEA7;
 
 }
 
@@ -115,7 +125,7 @@ code {
 /* Services Section Styling */
 .services-title {
   text-align: center;
-  color: #FB5F2A;
+  color: #BC6C25; /* orange */
 }
 
 .services-container {
@@ -123,7 +133,7 @@ code {
   justify-content: space-around;
   align-items: stretch;
   padding: 20px;
-  background: #333; 
+  background: #283618;
 }
 
 .service-box {
