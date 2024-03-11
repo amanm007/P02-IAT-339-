@@ -14,46 +14,34 @@ https://www.youtube.com/watch?v=wRNinF7YQqQ
 
 
 */
-
-html {
-  font-family: "SomeType", "Roboto", sans-serif;
-  font-size: 62.5%; /* 62.5% makes it easier to write rem pixel size (1.8rem = 18px) */
-  color: #283618; /* dark green */
-  background-color:#FFF8E1;
-}
-
 body {
-/*  font-family: 'Poppins', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-/*
-  background-color: black; 
-  color: white;
-*/
-  font-size: 1.6rem;
+  background-color: bisque; 
+  color: #283618;
   
 }
 
 .header {
-  background-color: bisque; /* bisque */
+  background-color:bisque;
   padding: 1rem 0;
   text-align: center;
 }
-
 .navbar {
   display: flex;
   justify-content: center; /* Center the links */
   flex-wrap: wrap; /* Allow the links to wrap on smaller screens */
 }
 .navbar a {
-  color: #283618;
+  color: #283618 ;
   text-decoration: none;
   margin: 0 10px;
   font-weight: bold;
 }
 
 .navbar a:hover {
-	color: #FFF8E1;;
+  color: #7bb186;
 }
 
 .main-banner {
@@ -82,16 +70,19 @@ body {
   border-top-color: black;
 }
 
-h2 {
-  margin-top: 6rem;
-  font-size: 48px;
+h1 {
+    font-size:72px;
 }
 
-h3 {
-  
-  
+h2 {
+  margin-top: 2rem;
+  font-size: 28px;
+}
+
+h3 {  
   margin-top: 1rem;
-  font-size: 32px;
+  font-size: 24px;
+  color: #283618;
 }
 
 h4 {
@@ -102,8 +93,16 @@ h4 {
 
 p {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 20px;
+  color: #283618;
+  max-width:80ch;
+}
 
+li, ul {
+  margin-top: 0;
+  font-size: 20px;
+  color: #283618;
+  max-width:80ch;
 }
 
 nav a:hover, nav a:focus {
@@ -125,7 +124,7 @@ code {
 /* Services Section Styling */
 .services-title {
   text-align: center;
-  color: #BC6C25; /* orange */
+  color: #283618;
 }
 
 .services-container {
@@ -133,7 +132,7 @@ code {
   justify-content: space-around;
   align-items: stretch;
   padding: 20px;
-  background: #283618;
+  background: #333; 
 }
 
 .service-box {
@@ -217,7 +216,7 @@ code {
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #fb5f2a;
+  background-color: #283618;
 }
 #personal-training {
   margin-top: 2rem;
@@ -247,7 +246,7 @@ code {
   margin: 10px;
 }
 #typography h1 span{
-  font-size: 16px;
+  font-size: 32px;
   font-weight: lighter;
 }
 #typography h2 span{
@@ -272,13 +271,13 @@ code {
   https://www.freecodecamp.org/news/css-button-style-hover-color-and-background/
   */
   .button-nav:hover, .button-nav:focus {
-    background-color:#fb5f2a;
+    background-color:#283618;
   }
   
   .InputLabel:hover, .InputLabel:focus{
   
 
-    border-color: #fb5f2a;
+    border-color: #283618;
     
     }
     .button-enquiry, .button-clear {
@@ -291,13 +290,13 @@ code {
     }
     
     .button-enquiry:hover, .button-clear:hover {
-      background-color: #fb5f2a; /* Change background to orange on hover */
+      background-color: #283618; /* Change background to orange on hover */
       color: black; 
     }
    
   
   .button-enquiry:hover {
-      background-color: #e04e22; /* Darker shade for hover state */
+      background-color:  #7bb186; /* Darker shade for hover state */
   }
   .product-summary {
     display: flex;
@@ -309,7 +308,7 @@ code {
 
 .product-item {
   display: flex;
-  background-color: #e04e22;
+  background-color:  #7bb186;
   border-radius: 4px;
   width: 100%; /* Make the product item take full width of the container */
   overflow: hidden;
@@ -380,8 +379,76 @@ code {
     }
     
     .input-text:hover, .input-text:focus {
-      border-color: #fb5f2a; /* Change border to orange on hover/focus */
+      border-color:  #7bb186; /* Change border to orange on hover/focus */
     }
+
+    #about_us {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    
+    .text-content,
+    .image-content {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    .text-content {
+      max-width: 50%;
+    }
+    
+    .image-content {
+      max-width: 50%;
+    }
+    
+    .image-content img {
+      width: 100%;
+      height: auto;
+    }
+    
+    @media (max-width: 768px) {
+      .text-content,
+      .image-content {
+        max-width: 100%;
+      }
+    }
+    .site-footer {
+      background-color: #283618; /* Choose a color that fits your site's theme */
+      color: white;
+      text-align: center;
+      padding: 5px 0;
+  }
+  
+  .site-footer .container {
+      width: 20%;
+      margin: 0 auto;
+      padding: 5px;
+  }
+  
+  .site-footer p {
+      margin: 10px 0;
+      color: #7bb186;
+  }
+  
+  .site-footer a {
+      color: #7bb186; /* Slightly lighter color for links for contrast */
+      text-decoration: none;
+  }
+  .site-footer h3 {
+    color: #7bb186; /* Slightly lighter color for links for contrast */
+    text-decoration: none;
+}
+  .site-footer a:hover {
+      text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+      .site-footer .container {
+          width: 95%;
+      }
+  }
 /*
 
 chnages the overall width of the image 
