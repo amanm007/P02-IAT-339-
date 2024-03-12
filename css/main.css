@@ -184,6 +184,7 @@ code {
 .image-content img {
   max-width: 100%;
   height: auto;
+  border: 10px solid #283618;
 }
 .image-content img {
   margin-top: 20px; 
@@ -346,7 +347,7 @@ code {
 
   .product-image,
   .product-info {
-      width: 100%; /* Make sure both image and info take full width on small screens */
+      width: 100%; /
   }
 
   .product-summary {
@@ -374,7 +375,7 @@ code {
       width: 100%;
       padding: 0.5rem;
       margin-top: 0.5rem;
-      border: 1px solid white; /* Default border color */
+      border: 1px solid white; 
       background-color: #000; /* Input field background color */
       color: white; /* Input field text color */
     }
@@ -440,13 +441,13 @@ code {
   
   .footer-social a:hover,
   .footer-links a:hover {
-      color: #7bb186; /* Adjust the color for the hover state */
+      color: #7bb186; 
   }
   
   /* Style for Font Awesome icons */
   .footer-social .fab {
-      font-size: 32px; /* Adjust icon size as needed */
-      margin: 0 20px; /* Spacing between icons */
+      font-size: 32px; 
+      margin: 0 20px; 
       margin-top: 5rem;
   }
   
@@ -455,7 +456,7 @@ code {
     width: 100%;
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid #fff; /* Optional: if you want a line above the copyright text */
+    border-top: 1px solid #fff; 
     
 }
   
@@ -483,26 +484,26 @@ code {
 }
 
 .customer-details {
-  flex: 3; /* Takes 3 parts of the available space */
+  flex: 3; 
   margin-right: 5rem;
 }
 
 .order-summary {
-  flex: 2; /* Takes 1 part of the available space */
+  flex: 2; 
   padding: 20px;
   background-color: #f8f8f8; /* Light grey background */
   border-radius: 8px;
 }
 
-/* Styles for the form fields to match your color scheme */
+
 
 .input-text {
 
  
   border: 1px solid #ccc; /* light grey border */
-  background-color: #f0f0f0; /* light grey background */
+  background-color: #f0f0f0; 
   color: #333; /* dark grey text color */
-  width: 100%; /* Adjust to desired width */
+  width: 100%; 
   padding: 0.5rem;
   margin-top: 0.5rem;
   
@@ -515,33 +516,33 @@ code {
 .button-enquiry {
   /*... existing styles ...*/
   margin-top: 0.9rem;
-  background-color: #7bb186; /* Your brand's green */
-  color: #ffffff; /* White text */
+  background-color: #7bb186; 
+  color: #ffffff; 
 }
 
 .button-enquiry:hover {
-  background-color: #5c8a58; /* A darker shade of green for hover */
+  background-color: #5c8a58; 
 }
 
 /* Style for the order summary box */
 .order-summary {
-  /*... existing styles ...*/
+
   padding: 20px;
-  background-color: #f8f8f8; /* Light grey background */
+  background-color: #f8f8f8; 
   border-radius: 8px;
-  border: 1px solid #7bb186; /* Your brand's green */
+  border: 1px solid #7bb186; 
 }
 
 /* Bag summary styles */
 .bag-summary {
-  padding-top: 20px; /* Add padding between the order and bag summaries */
+  padding-top: 20px; 
 }
 
 .bag-item {
   display: flex;
   flex-direction: column; 
  
-  border-top: 1px solid #ccc; /* Adds a separator line */
+  border-top: 1px solid #ccc; 
   padding-top: 20px;
 }
 
@@ -554,13 +555,13 @@ code {
 /* Style for bag item details */
 .bag-item-details p {
   margin: 10px;
-  color: #283618; /* your brand's dark color */
+  color: #283618; 
 }
 
-/*... more styles ...*/
+
 
 @media (max-width: 768px) {
-  /*... existing responsive styles ...*/
+  
   .checkout-wrapper,
   .customer-details, 
   .order-summary {
@@ -578,27 +579,69 @@ code {
 
 .text-content,
 .image-content {
-  flex: 1; /* This will ensure that both take up equal space */
-  padding: 20px; /* Adjust padding as needed */
+  flex: 1; 
+  padding: 20px; 
 }
 
-/* You may not need this styling if the image should take the full width available */
+
 .image-content img {
   max-width: 100%;
   height: auto;
 }
 
 @media (max-width: 768px) {
-  /* Adjustments for smaller screens - stacking the text and image */
+  
   .flex-container {
       flex-direction: column;
   }
   
   .text-content,
   .image-content {
-      width: 100%; /* Each child takes full width on smaller screens */
+      width: 100%; 
   }
 }
+.newsletter-container {
+  width: 100%; /* Full width */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f8f8; /* Your chosen background color */
+  margin-top: 10px;
+  height: 100%;
+  border: 3px solid #7bb186;
+}
+
+/* Add to existing #newsletter-form styles if necessary */
+#newsletter-form input[type="text"],
+#newsletter-form input[type="email"] {
+  margin-bottom: 10px; /* Adds space below the input fields */
+}
+#newsletter-form input[type="text"],
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  margin: 0 10px 20px 0;
+  border: 1px solid #ccc;
+}
+
+#newsletter-form button {
+  padding: 10px 20px;
+  background-color: #283618; /* This is your brand's dark green */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#newsletter-form button:hover {
+  background-color: #7bb186; /* This is the lighter green you've used for hover states */
+}
+
+/* Additional responsive considerations */
+@media (max-width: 768px) {
+  .newsletter-container {
+    padding: 10px;
+  }
+}
+
+
 
 /*
 
