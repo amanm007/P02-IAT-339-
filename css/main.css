@@ -18,7 +18,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: tan; 
+  background-color: bisque; 
   color: #283618;
   
 }
@@ -81,7 +81,7 @@ h2 {
 
 h3 {  
   margin-top: 1rem;
-  font-size: 20px;
+  font-size: 24px;
   color: #283618;
 }
 
@@ -125,10 +125,6 @@ code {
 .services-title {
   text-align: center;
   color: #283618;
-  background-color:bisque;
-  padding:10px;
-  margin-bottom:0px;
-  margin-top:75px;
 }
 
 .services-container {
@@ -136,8 +132,7 @@ code {
   justify-content: space-around;
   align-items: stretch;
   padding: 20px;
-  background: #333;
-  margin-bottom:75px;
+  background: #333; 
 }
 
 .service-box {
@@ -351,7 +346,7 @@ code {
 
   .product-image,
   .product-info {
-      width: 100%; /* Make sure both image and info take full width on small screens */
+      width: 100%; /
   }
 
   .product-summary {
@@ -379,7 +374,7 @@ code {
       width: 100%;
       padding: 0.5rem;
       margin-top: 0.5rem;
-      border: 1px solid white; /* Default border color */
+      border: 1px solid white; 
       background-color: #000; /* Input field background color */
       color: white; /* Input field text color */
     }
@@ -445,13 +440,13 @@ code {
   
   .footer-social a:hover,
   .footer-links a:hover {
-      color: #7bb186; /* Adjust the color for the hover state */
+      color: #7bb186; 
   }
   
   /* Style for Font Awesome icons */
   .footer-social .fab {
-      font-size: 32px; /* Adjust icon size as needed */
-      margin: 0 20px; /* Spacing between icons */
+      font-size: 32px; 
+      margin: 0 20px; 
       margin-top: 5rem;
   }
   
@@ -460,7 +455,7 @@ code {
     width: 100%;
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid #fff; /* Optional: if you want a line above the copyright text */
+    border-top: 1px solid #fff; 
     
 }
   
@@ -488,26 +483,26 @@ code {
 }
 
 .customer-details {
-  flex: 3; /* Takes 3 parts of the available space */
+  flex: 3; 
   margin-right: 5rem;
 }
 
 .order-summary {
-  flex: 2; /* Takes 1 part of the available space */
+  flex: 2; 
   padding: 20px;
   background-color: #f8f8f8; /* Light grey background */
   border-radius: 8px;
 }
 
-/* Styles for the form fields to match your color scheme */
+
 
 .input-text {
 
  
   border: 1px solid #ccc; /* light grey border */
-  background-color: #f0f0f0; /* light grey background */
+  background-color: #f0f0f0; 
   color: #333; /* dark grey text color */
-  width: 100%; /* Adjust to desired width */
+  width: 100%; 
   padding: 0.5rem;
   margin-top: 0.5rem;
   
@@ -520,33 +515,33 @@ code {
 .button-enquiry {
   /*... existing styles ...*/
   margin-top: 0.9rem;
-  background-color: #7bb186; /* Your brand's green */
-  color: #ffffff; /* White text */
+  background-color: #7bb186; 
+  color: #ffffff; 
 }
 
 .button-enquiry:hover {
-  background-color: #5c8a58; /* A darker shade of green for hover */
+  background-color: #5c8a58; 
 }
 
 /* Style for the order summary box */
 .order-summary {
-  /*... existing styles ...*/
+
   padding: 20px;
-  background-color: #f8f8f8; /* Light grey background */
+  background-color: #f8f8f8; 
   border-radius: 8px;
-  border: 1px solid #7bb186; /* Your brand's green */
+  border: 1px solid #7bb186; 
 }
 
 /* Bag summary styles */
 .bag-summary {
-  padding-top: 20px; /* Add padding between the order and bag summaries */
+  padding-top: 20px; 
 }
 
 .bag-item {
   display: flex;
   flex-direction: column; 
  
-  border-top: 1px solid #ccc; /* Adds a separator line */
+  border-top: 1px solid #ccc; 
   padding-top: 20px;
 }
 
@@ -559,13 +554,13 @@ code {
 /* Style for bag item details */
 .bag-item-details p {
   margin: 10px;
-  color: #283618; /* your brand's dark color */
+  color: #283618; 
 }
 
-/*... more styles ...*/
+
 
 @media (max-width: 768px) {
-  /*... existing responsive styles ...*/
+  
   .checkout-wrapper,
   .customer-details, 
   .order-summary {
@@ -583,25 +578,25 @@ code {
 
 .text-content,
 .image-content {
-  flex: 1; /* This will ensure that both take up equal space */
-  padding: 20px; /* Adjust padding as needed */
+  flex: 1; 
+  padding: 20px; 
 }
 
-/* You may not need this styling if the image should take the full width available */
+
 .image-content img {
   max-width: 100%;
   height: auto;
 }
 
 @media (max-width: 768px) {
-  /* Adjustments for smaller screens - stacking the text and image */
+  
   .flex-container {
       flex-direction: column;
   }
   
   .text-content,
   .image-content {
-      width: 100%; /* Each child takes full width on smaller screens */
+      width: 100%; 
   }
 }
 
