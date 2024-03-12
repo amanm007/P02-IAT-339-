@@ -81,7 +81,7 @@ h2 {
 
 h3 {  
   margin-top: 1rem;
-  font-size: 24px;
+  font-size: 20px;
   color: #283618;
 }
 
@@ -146,9 +146,6 @@ code {
   color: #000;
   text-align: center;
   border-radius: 8px;
-  
- 
- 
 }
 
 .service-box img {
@@ -184,6 +181,7 @@ code {
 .image-content img {
   max-width: 100%;
   height: auto;
+  border: 5px solid #283618;
 }
 .image-content img {
   margin-top: 20px; 
@@ -354,60 +352,68 @@ code {
   }
 }
 
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-      .product-item {
-          flex-direction: column;
-      }
-  
-      .product-image {
-          max-width: none; /* Resets the max-width for smaller devices */
-          width: 100%; /* Image takes full width */
-      }
-  }
-    
-    
-    
-    /* Styling for text input fields */
-    .input-text {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      border: 1px solid white; 
-      background-color: #000; /* Input field background color */
-      color: white; /* Input field text color */
-    }
-    
-    .input-text:hover, .input-text:focus {
-      border-color:  #7bb186; /* Change border to orange on hover/focus */
-    }
 
-    #about_us {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-item {
+      flex-direction: column;
+  }
+
+  .product-image {
+      max-width: none; /* Resets the max-width for smaller devices */
+      width: 100%; /* Image takes full width */
+  }
+}
     
-    .text-content,
-    .image-content {
-      flex: 1;
-      padding: 20px;
-    }
     
-    .text-content {
-      max-width: 50%;
-    }
     
-    .image-content {
-      max-width: 50%;
-    }
-    
-    .image-content img {
-      width: 100%;
-      height: auto;
-    }
+/* Styling for text input fields */
+.input-text {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: 1px solid white; 
+  background-color: #000; /* Input field background color */
+  color: white; /* Input field text color */
+}
+
+.input-text:hover, .input-text:focus {
+  border-color:  #7bb186; /* Change border to orange on hover/focus */
+}
+
+#about_us {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.text-content,
+.image-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h1{
+    margin-bottom:0px;
+}
+
+.image-content {
+  max-width: 50%;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+}
+
+.indented {
+    text-indent: 50px;
+}
     
     @media (max-width: 768px) {
       .text-content,
@@ -570,6 +576,7 @@ code {
       margin-left: 0;
   }
 }
+
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -579,7 +586,7 @@ code {
 .text-content,
 .image-content {
   flex: 1; 
-  padding: 20px; 
+  padding: 50px; 
 }
 
 
@@ -598,6 +605,33 @@ code {
   .image-content {
       width: 100%; 
   }
+}
+
+.event-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.event-box {
+  flex: 1; /* This ensures that all flex items take up equal width */
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; /* Distribute space vertically inside the box */
+  margin: 10px;
+  padding: 20px;
+  background: #fff; 
+  color: #000;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+.event-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Space between image and text */
 }
 
 /*
