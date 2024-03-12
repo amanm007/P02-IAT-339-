@@ -289,13 +289,13 @@ code {
     }
     
     .button-enquiry:hover, .button-clear:hover {
-      background-color: #283618; /* Change background to orange on hover */
+      background-color: #283618; 
       color: black; 
     }
    
   
   .button-enquiry:hover {
-      background-color:  #7bb186; /* Darker shade for hover state */
+      background-color:  #7bb186; 
   }
   .product-summary {
     display: flex;
@@ -309,12 +309,12 @@ code {
   display: flex;
   background-color:  #7bb186;
   border-radius: 4px;
-  width: 100%; /* Make the product item take full width of the container */
+  width: 100%; 
   overflow: hidden;
 }
 
 .product-image {
-    width: 50%; /* Set image width to take up half of the container */
+    width: 50%; 
     height: auto;
     object-fit: cover;
 }
@@ -325,17 +325,17 @@ code {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 50%; /* Set content width to take up the remaining half */
+    width: 50%; 
 }
 
 .product-info h3 {
     margin-bottom: 10px; 
-    font-size: 1.5em; /* Increase the font size */
+    font-size: 1.5em; /* Increase the the font size to 1.5remm */
 }
 
 .product-info p {
     margin: 5px 0;
-    font-size: 1.2em; /* Increase the font size */
+    font-size: 1.2em; /* Increasingn rhreb  the font size */
 }
 @media (max-width: 768px) {
   .product-item {
@@ -348,7 +348,7 @@ code {
   }
 
   .product-summary {
-      margin: 20px; /* Reduce margin on smaller screens */
+      margin: 20px; /* Reducing margin on smaller screens */
   }
 }
 
@@ -360,7 +360,7 @@ code {
   }
 
   .product-image {
-      max-width: none; /* Resets the max-width for smaller devices */
+      max-width: none; /* Resets the maximmm-width with smaller devices */
       width: 100%; /* Image takes full width */
   }
 }
@@ -373,12 +373,12 @@ code {
   padding: 0.5rem;
   margin-top: 0.5rem;
   border: 1px solid white; 
-  background-color: #000; /* Input field background color */
-  color: white; /* Input field text color */
+  background-color: #000; 
+  color: white; 
 }
 
 .input-text:hover, .input-text:focus {
-  border-color:  #7bb186; /* Change border to orange on hover/focus */
+  border-color:  #7bb186; 
 }
 
 #about_us {
@@ -422,7 +422,7 @@ code {
       }
     }
     .site-footer {
-      background-color: #283618; /* Your existing footer color */
+      background-color: #283618; 
       color: white;
       padding: 1rem 0;
       text-align: center;
@@ -515,11 +515,11 @@ code {
 }
 
 .input-text:focus {
-  border-color: #5c8a58; /* A darker shade of green for focus */
+  border-color: #5c8a58; 
 }
 
 .button-enquiry {
-  /*... existing styles ...*/
+ 
   margin-top: 0.9rem;
   background-color: #7bb186; 
   color: #ffffff; 
@@ -552,12 +552,12 @@ code {
 }
 
 .bag-image {
-  width: 400px; /* Adjust as necessary */
+  width: 400px; 
   height: auto;
   margin-right: 20px;
 }
 
-/* Style for bag item details */
+
 .bag-item-details p {
   margin: 10px;
   color: #283618; 
@@ -615,7 +615,7 @@ code {
 }
 
 .event-box {
-  flex: 1; /* This ensures that all flex items take up equal width */
+  flex: 1; /*  ensures that all flex items take up equal width */
   display: flex;
   flex-direction: column; 
   justify-content: space-between; /* Distribute space vertically inside the box */
@@ -667,16 +667,15 @@ https://www.w3schools.com/cssref/sel_hover.php
   width: 100%; /* Full width */
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f8f8f8; /* Your chosen background color */
+  background-color: #f8f8f8; 
   margin-top: 10px;
   height: 100%;
   border: 5px solid #283618;
 }
 
-/* Add to existing #newsletter-form styles if necessary */
 #newsletter-form input[type="text"],
 #newsletter-form input[type="email"] {
-  margin-bottom: 10px; /* Adds space below the input fields */
+  margin-bottom: 10px; 
 }
 #newsletter-form input[type="text"],
 #newsletter-form input[type="email"] {
@@ -696,8 +695,49 @@ https://www.w3schools.com/cssref/sel_hover.php
 #newsletter-form button:hover {
   background-color: #7bb186; 
 }
+.contact-section {
+  text-align: center;
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 1rem;
+}
 
-/* Additional responsive considerations */
+.contact-form-container {
+  margin: 2rem auto; 
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #7bb186;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #5c8a58;
+}
+
+.contact-info {
+  text-align: center;
+  margin: 2rem auto;
+}
+
 @media (max-width: 768px) {
   .newsletter-container {
     padding: 10px;
