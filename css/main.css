@@ -634,6 +634,7 @@ code {
   margin-bottom: 20px; /* Space between image and text */
 }
 
+
 /*
 
 chnages the overall width of the image 
@@ -659,3 +660,46 @@ https://www.w3schools.com/cssref/sel_hover.php
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+
+
+.newsletter-container {
+  width: 100%; /* Full width */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f8f8; /* Your chosen background color */
+  margin-top: 10px;
+  height: 100%;
+  border: 5px solid #283618;
+}
+
+/* Add to existing #newsletter-form styles if necessary */
+#newsletter-form input[type="text"],
+#newsletter-form input[type="email"] {
+  margin-bottom: 10px; /* Adds space below the input fields */
+}
+#newsletter-form input[type="text"],
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  margin: 0 10px 20px 0;
+  border: 1px solid #ccc;
+}
+
+#newsletter-form button {
+  padding: 10px 20px;
+  background-color: #283618; 
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#newsletter-form button:hover {
+  background-color: #7bb186; 
+}
+
+/* Additional responsive considerations */
+@media (max-width: 768px) {
+  .newsletter-container {
+    padding: 10px;
+  }
+} 
