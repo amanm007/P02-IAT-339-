@@ -9,7 +9,6 @@ https://www.youtube.com/watch?v=Y8zMYaD1bz0&list=PL4cUxeGkcC9i3FXJSUfmsNOx8E7u6U
 https://www.youtube.com/watch?v=u044iM9xsWU
 https://www.youtube.com/watch?v=3YW65K6LcIA
 https://www.youtube.com/watch?v=SgmNxE9lWcY
-https://www.youtube.com/watch?v=SgmNxE9lWcY
 https://www.youtube.com/watch?v=wRNinF7YQqQ
 
 
@@ -118,6 +117,10 @@ code {
   margin: 1rem 0; 
   white-space: nowrap; 
   overflow-x: auto; 
+}
+
+a {
+  color: #7bb186;  
 }
 
 
@@ -634,7 +637,9 @@ code {
   margin-bottom: 20px; /* Space between image and text */
 }
 
-
+cite{
+    font-family:Times New Roman, fancy;
+}
 /*
 
 chnages the overall width of the image 
