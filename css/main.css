@@ -146,12 +146,13 @@ code {
   color: #000;
   text-align: center;
   border-radius: 8px;
+  
  
  
 }
 
 .service-box img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   margin-bottom: 20px; /* Space between image and text */
 }
@@ -415,40 +416,190 @@ code {
       }
     }
     .site-footer {
-      background-color: #283618; /* Choose a color that fits your site's theme */
+      background-color: #283618; /* Your existing footer color */
       color: white;
+      padding: 1rem 0;
       text-align: center;
-      padding: 5px 0;
   }
   
-  .site-footer .container {
-      width: 20%;
-      margin: 0 auto;
-      padding: 5px;
+  .footer-social,
+  .footer-links {
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
   }
   
-  .site-footer p {
-      margin: 10px 0;
-      color: #7bb186;
-  }
-  
-  .site-footer a {
-      color: #7bb186; /* Slightly lighter color for links for contrast */
+  .footer-social a,
+  .footer-links a {
+      color: white;
+      padding: 0.5rem;
       text-decoration: none;
+      margin: 0 40px;
+      margin-top: 5rem;
   }
-  .site-footer h3 {
-    color: #7bb186; /* Slightly lighter color for links for contrast */
-    text-decoration: none;
+  
+  .footer-social a:hover,
+  .footer-links a:hover {
+      color: #7bb186; /* Adjust the color for the hover state */
+  }
+  
+  /* Style for Font Awesome icons */
+  .footer-social .fab {
+      font-size: 32px; /* Adjust icon size as needed */
+      margin: 0 20px; /* Spacing between icons */
+      margin-top: 5rem;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #fff; /* Optional: if you want a line above the copyright text */
+    
 }
-  .site-footer a:hover {
-      text-decoration: underline;
-  }
   
   @media (max-width: 768px) {
-      .site-footer .container {
-          width: 95%;
+      .footer-social,
+      .footer-links {
+          flex-direction: column;
       }
   }
+    
+    /* CopyRight Text */
+    .copy-right-text {
+      text-align: center;
+      width: 100%;
+      margin-top: 20px;
+      color: white;
+    }
+    
+  .checkout-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.customer-details {
+  flex: 3; /* Takes 3 parts of the available space */
+  margin-right: 5rem;
+}
+
+.order-summary {
+  flex: 2; /* Takes 1 part of the available space */
+  padding: 20px;
+  background-color: #f8f8f8; /* Light grey background */
+  border-radius: 8px;
+}
+
+/* Styles for the form fields to match your color scheme */
+
+.input-text {
+
+ 
+  border: 1px solid #ccc; /* light grey border */
+  background-color: #f0f0f0; /* light grey background */
+  color: #333; /* dark grey text color */
+  width: 100%; /* Adjust to desired width */
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  
+}
+
+.input-text:focus {
+  border-color: #5c8a58; /* A darker shade of green for focus */
+}
+
+.button-enquiry {
+  /*... existing styles ...*/
+  margin-top: 0.9rem;
+  background-color: #7bb186; /* Your brand's green */
+  color: #ffffff; /* White text */
+}
+
+.button-enquiry:hover {
+  background-color: #5c8a58; /* A darker shade of green for hover */
+}
+
+/* Style for the order summary box */
+.order-summary {
+  /*... existing styles ...*/
+  padding: 20px;
+  background-color: #f8f8f8; /* Light grey background */
+  border-radius: 8px;
+  border: 1px solid #7bb186; /* Your brand's green */
+}
+
+/* Bag summary styles */
+.bag-summary {
+  padding-top: 20px; /* Add padding between the order and bag summaries */
+}
+
+.bag-item {
+  display: flex;
+  flex-direction: column; 
+ 
+  border-top: 1px solid #ccc; /* Adds a separator line */
+  padding-top: 20px;
+}
+
+.bag-image {
+  width: 400px; /* Adjust as necessary */
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Style for bag item details */
+.bag-item-details p {
+  margin: 10px;
+  color: #283618; /* your brand's dark color */
+}
+
+/*... more styles ...*/
+
+@media (max-width: 768px) {
+  /*... existing responsive styles ...*/
+  .checkout-wrapper,
+  .customer-details, 
+  .order-summary {
+      width: 100%;
+      margin-right: 0;
+      margin-right: 0;
+      margin-left: 0;
+  }
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content,
+.image-content {
+  flex: 1; /* This will ensure that both take up equal space */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+/* You may not need this styling if the image should take the full width available */
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens - stacking the text and image */
+  .flex-container {
+      flex-direction: column;
+  }
+  
+  .text-content,
+  .image-content {
+      width: 100%; /* Each child takes full width on smaller screens */
+  }
+}
+
 /*
 
 chnages the overall width of the image 

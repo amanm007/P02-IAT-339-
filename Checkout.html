@@ -6,81 +6,101 @@
     <title>The Drunk Pawn - Checkout</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
 
 <header class="header">
     <nav class="navbar">
         <a href="Home.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="Products.html">Products</a>
-      <a href="Checkout.html">Checkout</a>
-      <a href="contact-us.html">Contact Us</a>
+        <a href="About.html">About</a>
+        <a href="Products.html">Products</a>
+        <a href="Checkout.html">Checkout</a>
+        <a href="Contact.html">Contact Us</a>
     </nav>
 </header>
 
-<section class="product-summary">
-  <div class="product-item">
-      <img src="images/strength-training.jpg" alt="Endurance Training" class="product-image">
-      <div class="product-info">
-          <h3>Endurance Training</h3>
-          <p>Price: $80 per session</p>
-          <button class="button-enquiry">Book Now</button>
-      </div>
-  </div>
-</section>
-  
-      <section class="delivery-details">
-          <h3>Enter Your Delivery Details</h3>
-          <form class="delivery-form">
+<main class="checkout-wrapper">
+    <section class="customer-details">
+        <h3>Enter Your Delivery Details</h3>
+        <form class="delivery-form">
             <label for="emailField">Email:</label>
-            <input type="email" id="emailField" class="input-text" name="email">
-            <label for="fname">First name</label><br>
-            <input type="text" id="fname" name="fname" class="input-text" placeholder="Enter your name">
-            <label for="lname">Last name</label><br>
-            <input type="text" id="lname" name="lname" class="input-text" placeholder="Enter your Last name">
-            <label for="Address">Address</label><br>
-            <input type="text" id="Address" name="Address" class="input-text" placeholder="Enter your Address">
-            <label for="City">City</label><br>
-            <input type="text" id="City" name="City" class="input-text" placeholder="Enter your City">
-            <label for="PostalCode">Postal Code</label><br>
-            <input type="text" id="PostalCode" name="PostalCode"class="input-text" placeholder="Enter your Postal Code">
+            <input type="email" id="emailField" class="input-text" name="email" required>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" class="input-text" name="fname" required>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" class="input-text" name="lname" required>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" class="input-text" name="Address" required>
+            <label for="City">City:</label>
+            <input type="text" id="City" class="input-text" name="City" required>
+            <label for="PostalCode">Postal Code:</label>
+            <input type="text" id="PostalCode" class="input-text" name="PostalCode" required>
+        </form>
 
-
+        <h3>Enter Your Card Details</h3>
+        <form class="payment-form">
+            <label for="CardNumber">Card Number:</label>
+            <input type="text" id="CardNumber" class="input-text" name="CardNumber" placeholder="•••• •••• •••• ••••" required>
+            <label for="ExpiryMonth">Expiry Month:</label>
+            <input type="text" id="ExpiryMonth" class="input-text" name="ExpiryMonth" placeholder="MM" required>
+            <label for="ExpiryYear">Expiry Year:</label>
+            <input type="text" id="ExpiryYear" class="input-text" name="ExpiryYear" placeholder="YYYY" required>
+            <label for="CVV">CVV:</label>
+            <input type="text" id="CVV" class="input-text" name="CVV" placeholder="•••" required>
           </form>
-      </section>
-  
-      <section class="payment-details">
-
-          <h3>Enter Your Card Details</h3>
-          <form class="payment-form">
-            <label for="CardNumber">Card Number</label><br>
-            <input type="number" id="CardNumber" name="CardNumber"class="input-text" placeholder="Enter your 10 digits with no spaces">
-            <label for="Date">Month</label><br>
-            <input type="text" id="Date" name="Date"class="input-text" placeholder="Enter Month Expiry">
-            <label for="Date">Month</label><br>
-            <input type="text" id="Date" name="Date"class="input-text" placeholder="Enter Month Expiry">
-            <label for="Year">Year</label><br>
-            <input type="text" id="Year" name="Year"class="input-text" placeholder="Enter Year Expiry">
-            <label for="CVV">CVV</label><br>
-            <input type="text" id="CVV" name="CVV" class="input-text" placeholder="Enter CVV(3 digit)">
-          </form>
+          
           <button class="button-enquiry">Pay Now</button>
-      </section>
-  </main>
-  
-  <footer class="site-footer">
-    <div class="container">
-        
-        <div class="footer-contact">
-            <h3>Contact Us</h3>
-            <p>Drunk Pawn</p>
-            <p>13618 100 AVE, Surrey, BC</p>
-            <p>V3T0A8</p>
-            <p>Email: <a href="mailto:info@thedrunkpawn.com">info@thedrunkpawn.com</a></p>
-        </div>
-        <!-- Add any other footer content you wish here -->
-    </div>
-</footer>
+          </section>
+          
+          <aside class="order-summary">
+            <h3>Order Summary</h3>
+            <p><strong>Subtotal:</strong> $<span id="subtotal">79.00</span></p>
+            <p><strong>Tax:</strong> $<span id="tax">4.99</span></p>
+            <p><strong>Total:</strong> $<span id="total">83.99</span></p>
+            
+            <!-- Promo code section -->
+            <label for="promo-code">Promo Code:</label>
+            <input type="text" id="promo-code" name="promo-code" class="input-text">
+            <button class="button-enquiry" id="apply-promo">Apply</button>
+            
+            <!-- Bag summary section moved inside order-summary -->
+            <h3>Bag Summary</h3>
+            <div class="bag-item">
+                <img src="images/product_1.jpg" alt="Product Name" class="bag-image">
+                <div class="bag-item-details">
+                    <p><strong>Product Name:</strong> Tough Blunder Pale Ale (4PK)</p>
+                    <p><strong>Delivery Date:</strong> 5-6 Business days </p>
+                    <!-- Add more details as needed -->
+                </div>
+            </div>
+        </aside>
+            
+          </main>
+          
+          <footer class="site-footer">
+            <div class="footer-social">
+                <!-- Social Icons -->
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://twitter.com/?lang=en" class="fab fa-twitter"></a>
+                <a href="https://www.youtube.com/watch?v=Z1GTqD0qYqc" class="fab fa-youtube"></a>
+                <a href="https://github.com/amanm007/P02-IAT-339-" class="fab fa-github"></a>
+            </div>
+            <div class="footer-links">
+                <!-- Navigation Links -->
+                <a href="Home.html">Home</a>
+                <a href="Products.html">Products</a>
+                <a href="About.html">About Us</a>
+                <a href="Styleguide.html">Styleguide</a>
+                <a href="https://github.com/amanm007/P02-IAT-339-">Github</a>
+                <a href="About.html">Citations</a>
+                
+            </div>
+            <div class="footer-bottom">
+                <a> &copy; 2024 The Drunk Pawn. All rights reserved.</a>
+            </div>
+        </footer>
+          
 </body>
 </html>
